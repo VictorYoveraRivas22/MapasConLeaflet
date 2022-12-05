@@ -115,11 +115,9 @@ for (var i = 0; i < tmbLugares; i++) {
                dxarr[j]+=1;
                //console.log(templugar+"-"+temdx+"-"+tempcan+"-"+j)
                var nretorno=crearCircle(xcor,ycor,templugar,temdx,tempcan,j);
-               lll[l]={id:temdx,it:nretorno};
+            
              }
-             pruebaxxx.push(lll);
-             pruebadxx2[j]=pruebaxxx;
-             pruebaxxx.pop;
+            
          }
        }
    }
@@ -167,52 +165,3 @@ function PORDX() {
   }
 
   PORDX();
-var myCar;
-myCar={
-  label: sem34[0].DX[0],
-    type: "circle",
-    radius: 6,
-    color: 'f03',
-    fillColor:mcolr[0].code.hex,
-    fillOpacity: 0.6,
-    weight: 2,
-    layers: pruebalayer[0], inactive: false
- 
-};
-
-console.log(pruebalayer);
-
-var myCar2;
-var daax=[];
-//daax.push(myCar);
-for (var i = 0; i < pruebalayer.length; i++) {
-  myCar2={
-    label: sem34[0].DX[i],
-    type: "circle",
-    radius: myradio,
-    color: 'f03',
-    fillColor:mcolr[i].code.hex,
-    fillOpacity: 0.6,
-    weight: 1,
-    layers: pruebalayer[i],inactive:false
-  };
-  pruebalayer[i].addTo(map);
-  daax.push(myCar2);
-   }
-
-console.log(daax);
-// Agregar un marcador
-
-// Agregar la leyenda
-
-
-const legend = L.control.Legend({
-  position: "bottomright",
-  collapsed: false,
-  symbolWidth: 24,
-  opacity:1,
-  column:1,
-  legends:  daax
-
-}).addTo(map);
-
