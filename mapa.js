@@ -167,7 +167,6 @@ function PORDX() {
   }
 
   PORDX();
-console.log("--------");
 var myCar;
 myCar={
   label: sem34[0].DX[0],
