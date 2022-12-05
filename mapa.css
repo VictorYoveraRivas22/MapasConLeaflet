@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+background-color: #fff7e0;
+
+}
+
+.titulo{
+ font-size: 3rem;
+ color: rgb(3, 47, 91);
+ text-align: center;
+}
+
+.subtitle{
+    text-align: center;
+}
+
+.smapa{
+    display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   
+}
+.smapa .mimapa{
+    width: 80%;  
+}
+
+.smapa .leyenda {
+    width: 20%;  
+    
+}
+
+
+.smapa .leyenda h2 {
+    text-align: center;
+    
+}
+
+
+
+#map{
+    height: 40rem;
+    width: 90rem;
+   
+}
